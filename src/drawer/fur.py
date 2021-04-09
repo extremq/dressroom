@@ -1,7 +1,7 @@
 import os
 
 from .asset_loader import AssetLoader
-from ..utils import get_color_filter
+from .utils import get_color_filter
 
 
 assets = os.path.abspath(
