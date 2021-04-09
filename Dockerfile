@@ -17,7 +17,7 @@ COPY packed-assets /src/packed-assets
 RUN python -u packed-assets/unpack.py
 
 # Copy our code from the current folder to /src inside the container
-COPY . .
+COPY src .
 
 # Define our command to be run when launching the container
-CMD ["python", "-u", "src/service.py"]
+CMD ["python", "-u", "service.py"]
