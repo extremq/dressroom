@@ -6,7 +6,7 @@ from .asset_loader import AssetLoader
 assets = os.path.abspath(
 	os.path.join(
 		__file__,
-		"..", "assets", "poses"
+		"..", "..", "assets", "poses"
 	)
 )
 layers = {
