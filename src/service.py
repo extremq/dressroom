@@ -1,6 +1,6 @@
 from pyservice import Service
 
-from .drawer import get_pose, get_fur, get_costume, get_section_name
+from drawer import get_pose, get_fur, get_costume, get_section_name
 
 
 service = Service("dressroom")
