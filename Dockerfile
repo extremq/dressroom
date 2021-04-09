@@ -4,6 +4,9 @@ FROM python:3.7-slim
 # Set the application directory
 WORKDIR /src
 
+# Install git
+RUN apt-get install -y git
+
 # Install our requirements.txt
 COPY requirements.txt /src/requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
