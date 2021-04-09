@@ -20,4 +20,4 @@ RUN python -u packed-assets/unpack.py
 COPY . .
 
 # Define our command to be run when launching the container
-CMD ["python", "-u", "service.py"]
+CMD ["python", "-u", "src/service.py"]
