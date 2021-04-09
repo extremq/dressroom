@@ -5,6 +5,7 @@ FROM python:3.7-slim
 WORKDIR /src
 
 # Install git
+RUN apt-get update
 RUN apt-get install -y git
 
 # Install our requirements.txt
