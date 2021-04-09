@@ -7,8 +7,7 @@ from .utils import get_color_filter
 assets = os.path.abspath(
 	os.path.join(
 		__file__,
-		"..", "..", "..",
-		"assets", "costumes"
+		"..", "assets", "costumes"
 	)
 )
 
