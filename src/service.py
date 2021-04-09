@@ -43,7 +43,7 @@ async def draw_costume(request):
 	await request.send("".join([
 		SVG_DEF,
 		costume.asset,
-		costume.generate_color(request.colors),
+		*costume.generate_color(request.colors),
 		costume.render,
 		"</svg>"
 	]))
@@ -84,12 +84,12 @@ async def draw_mouse(request):
 		fur.asset,
 		fur.generate_color(request.fur_color),
 
-		*(
+		"".join(
 			costume.asset
 			for costume, _ in costumes
 		),
-		*(
-			costume.generate_color(colors)
+		"".join(
+			"".join(costume.generate_color(colors))
 			for costume, colors in costumes
 		),
 
