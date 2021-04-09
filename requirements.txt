@@ -1,0 +1,1 @@
+-e git://github.com/cheeseformice/pyservice.git@master#egg=pyservice
