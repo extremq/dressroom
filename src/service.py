@@ -5,7 +5,7 @@ from drawer import get_pose, get_fur, get_costume, get_section_name
 
 service = Service("dressroom")
 SVG_DEF = '<svg xmlns="http://www.w3.org/2000/svg" \
-				height="80px" width="60px">'
+				height="100px" width="100px">'
 
 
 @service.on_request("fur")
