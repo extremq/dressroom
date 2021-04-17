@@ -59,7 +59,10 @@ class Pose(AssetLoader):
 
 	def preprocess(self):
 		g = self.doc.getElementsByTagName("g")[0]
-		self.matrices["main"] = g.getAttribute("transform")
+		# Always returns the same thing. It doesnt fit for all items.
+		# self.matrices["main"] = g.getAttribute("transform")
+		# By adjusting it can now fit even the biggest items!
+		self.matrices["main"] = "matrix(1.0, 0.0, 0.0, 1.0, 50, 65)"
 
 		for use in self.doc.getElementsByTagName("use"):
 			layer = use.getAttribute("id").split("_", 1)[0]
